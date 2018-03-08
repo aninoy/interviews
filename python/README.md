@@ -1,1 +1,1 @@
-A general recap of core Python 3 Concepts from basics to advanced with focus towards PEP8.
+A general recap of core Python 3 Concepts from basics to advanced with focus towards PEP8. I really love [sentdex](https://www.youtube.com/user/sentdex)'s guides and tutorials very helpful in going from basic to advanced level. This should be a must subscribe for every python developer imho as should the [PEP8](https://www.python.org/dev/peps/pep-0008/)'s words of wisdom.
