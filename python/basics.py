@@ -41,6 +41,17 @@ print(myDict['b'])
 # String Functions
 # =================
 
+names = ['pet', 'stores', 'are', 'evil']
+
+print(', '.join(names))
+
+import os
+file_name = 'test.txt'
+dirs = '/Users/aninoymahapatra/dev/personal/interviews/python'
+with open(os.path.join(dirs, file_name)) as f:
+    print(f.read())
+
+
 print(myStr.capitalize())
 print(myStr.swapcase())
 print(myStr.replace('world', 'everyone'))
