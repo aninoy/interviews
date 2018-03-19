@@ -1,7 +1,4 @@
 C++/*
 !C++/*.cpp
 !C++/*.md
-python/*
-!python/*.py
-!python/*.md
-
+__pycache__

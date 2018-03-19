@@ -15,6 +15,3 @@ if __name__ == '__main__':
         a = temp
 
     print(' '.join([str(x) for x in a]))
-
-
-
