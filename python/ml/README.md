@@ -171,17 +171,20 @@ experiment: try all n_neighbors from 1 to 10 and see which does best
 
 ### Logistic Regression
 initial results:
-```Accuracy on training subset: 0.953
+```
+Accuracy on training subset: 0.953
 Accuracy on test subset: 0.958
 ```
 
 How to optimize?
 default value for parameter C: 1
 1. experiment with C = 100, results:
-```Accuracy on training subset: 0.974
+```
+Accuracy on training subset: 0.974
 Accuracy on test subset: 0.965
 ```
 2. experiment with C = 0.01, results:
-```Accuracy on training subset: 0.934
+```
+Accuracy on training subset: 0.934
 Accuracy on test subset: 0.930
 ```
