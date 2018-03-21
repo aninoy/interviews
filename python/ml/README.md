@@ -1,7 +1,7 @@
 ## Notes from implementing various ml algos from scikit-learn
 
-breast cancer dataset is pre-packaged, cleaned and pre-processed
-pre-reqs: using python 3.6, scikit-learn, matplotlib
+* breast cancer dataset is pre-packaged, cleaned and pre-processed
+* pre-reqs: using python 3.6, scikit-learn, matplotlib
 
 
 ### Breast Cancer Wisconsin (Diagnostic) Database
@@ -123,7 +123,7 @@ References
      163-171.
 
 
-dataset feature names:
+Dataset Feature Names:
 ```
 ['mean radius' 'mean texture' 'mean perimeter' 'mean area'
  'mean smoothness' 'mean compactness' 'mean concavity'
@@ -135,15 +135,16 @@ dataset feature names:
  'worst smoothness' 'worst compactness' 'worst concavity'
  'worst concave points' 'worst symmetry' 'worst fractal dimension']
 ```
-dataset target names:
+Dataset Target Names:
 ```
 ['malignant' 'benign']
 ```
-dataset shape: (569, 30)
-dataset type: <class 'numpy.ndarray'>
+Dataset Shape: (569, 30)
+
+Dataset Type: <class 'numpy.ndarray'>
 
 
-### basic ml process
+### Basic ML Process
 	1. get data, pre-process it
 	2. pick an algo or classifier
 	3. train, verify accuracy and optimize
@@ -155,13 +156,13 @@ dataset type: <class 'numpy.ndarray'>
 * starts to slow down with larger datasets and
 * general idea: each new sample is tested against k nearest neighbors to make prediction
 
-default settings for knn:
+Default settings for knn:
 ```
 KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
      metric_params=None, n_jobs=1, n_neighbors=5, p=2, weights='uniform')
 ```
 
-initial results:
+Initial results:
 Accuracy of kNN, n=5, on training: 0.946
 Accuracy of kNN, n=5, on test: 0.930
 
@@ -170,20 +171,21 @@ experiment: try all n_neighbors from 1 to 10 and see which does best
 
 
 ### Logistic Regression
-initial results:
+Initial results:
 ```
 Accuracy on training subset: 0.953
 Accuracy on test subset: 0.958
 ```
 
-How to optimize?
-default value for parameter C: 1
-1. experiment with C = 100, results:
+*How to optimize?*
+
+Default value for parameter C = 1
+1. Experiment with C = 100, results:
 ```
 Accuracy on training subset: 0.974
 Accuracy on test subset: 0.965
 ```
-2. experiment with C = 0.01, results:
+2. Experiment with C = 0.01, results:
 ```
 Accuracy on training subset: 0.934
 Accuracy on test subset: 0.930
