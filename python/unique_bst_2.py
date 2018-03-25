@@ -16,7 +16,7 @@ def recursive_bst(parent, rest):
             if lc + rc == 0:
                 count += 1
             else:
-                count += lc + rc
+                count += lc * rc
     print('End:', parent, rest, count)
     return count
 
@@ -28,7 +28,7 @@ def numTrees(n):
 
 
 def main():
-    count = numTrees(6)
+    count = numTrees(19)
     print(count)
 
 if __name__ == '__main__':
